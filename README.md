@@ -1,5 +1,5 @@
 # C++ STL Quick Help
-It contains C++ STLs usage and quick help with easy to understand comments and examples (copy+paste to use)
+It contains C++ STLs usage and quick help with easy to understand comments and examples (copy+paste to use).  
 I will be using "int" for ease. You can replace it with any data structure
 
 ### :memo:Different ways of using priority_queue (i.e. heap) :mount_fuji:
