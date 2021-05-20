@@ -70,7 +70,7 @@ auto comp = [&mp](int &a, int &b) {
 Examples :
     string source = "MIK";
     string target = "";
-    target = move(source);
+    target = std::move(source);
     cout << " source = " << source << endl;
     cout << "target = "  << target << endl;
     /*
@@ -81,7 +81,7 @@ Examples :
     
     vector<string> v;
     string str = "example";
-    v.push_back(move(str));
+    v.push_back(std::move(str));
     /*
     After this, str becomes empty i.e. ""
     And while moving str inside v, no extra copy of str was done implicitly.
@@ -89,7 +89,7 @@ Examples :
 
     vector<int> temp{1, 2, 3};
     vector<vector<int>> result;
-    result.push_back(move(temp));
+    result.push_back(std::move(temp));
     /*
     This allows no copy of "temp" being created.
     It ensures that the contents of "temp"
