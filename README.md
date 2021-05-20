@@ -61,13 +61,24 @@ auto comp = [&mp](int &a, int &b) {
 
 ```
 
-### :memo: When and why to use std::move :arrow_left:
+### :memo: When and why to use std::move() :arrow_left:
 ```c++
 /*
     To efficiently transfer the resources from source to target.
     By efficient, I mean no usage of extra space and time for creating copy.
 */
-Examples : 
+Examples :
+    string source = "MIK";
+    string target = "";
+    target = move(source);
+    cout << " source = " << source << endl;
+    cout << "target = "  << target << endl;
+    /*
+        output :
+        source = 
+        target = "MIK"
+    */
+    
     vector<string> v;
     string str = "example";
     v.push_back(move(str));
