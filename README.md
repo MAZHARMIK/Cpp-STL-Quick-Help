@@ -60,3 +60,29 @@ auto comp = [&mp](int &a, int &b) {
 };
 
 ```
+
+### :memo: When and why to use std::move :arrow_left:
+```c++
+/*
+    To efficiently transfer the resources from source to target.
+    By efficient, I mean no usage of extra space and time for creating copy.
+*/
+Examples : 
+    vector<string> v;
+    string str = "example";
+    v.push_back(move(str));
+    /*
+    After this, str becomes empty i.e. ""
+    And while moving str inside v, no extra copy of str was done implicitly.
+    */
+
+    vector<int> temp{1, 2, 3};
+    vector<vector<int>> result;
+    result.push_back(move(temp));
+    /*
+    This allows no copy of "temp" being created.
+    It ensures that the contents of "temp"
+    will be moved into the "result".  This is less
+    expensive, also means temp will now be empty.
+    */
+```
