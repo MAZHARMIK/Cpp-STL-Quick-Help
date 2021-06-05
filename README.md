@@ -98,7 +98,7 @@ Examples :
     */
 ```
 
-### :memo: std::accumulate(begin_iterator, end_iterator, initial_sum) :mount_fuji:
+### :memo: std::accumulate(begin_iterator, end_iterator, initial_sum) :heavy_plus_sign:
 ```c++
 int sum = 0;
 vector<int> nums{1, 3, 2, 5};
@@ -106,5 +106,5 @@ sum = accumulate(begin(nums), end(nums), 0);
 
 cout << sum; //11
 
-Benefit : You didn't have to write for loop to find the sum :neckbeard:
+Benefit : You didn't have to write for loop to find the sum
 ```
