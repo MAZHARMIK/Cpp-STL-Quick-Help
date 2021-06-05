@@ -97,3 +97,14 @@ Examples :
     expensive, also means temp will now be empty.
     */
 ```
+
+### :memo: std::accumulate(begin_iterator, end_iterator, initial_sum) :mount_fuji:
+```c++
+int sum = 0;
+vector<int> nums{1, 3, 2, 5};
+sum = accumulate(begin(nums), end(nums), 0);
+
+cout << sum; //11
+
+Benefit : You didn't have to write for loop to find the sum :neckbeard:
+```
