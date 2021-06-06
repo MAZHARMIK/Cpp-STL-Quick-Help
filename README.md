@@ -108,3 +108,18 @@ cout << sum; //11
 
 Benefit : You didn't have to write for loop to find the sum
 ```
+
+### :memo: \*min_element(begin_iterator, end_iterator), \*max_element(begin_iterator, end_iterator), minmax_element(begin_iterator, end_iterator) :astonished:
+```c++
+vector<int> nums{1, 3, 2, 5};
+
+int minimumValue = *min_element(begin(nums), end(nums)); //1
+int maximumValue = *max_element(begin(nums), end(nums)); //5
+                OR,
+        auto itr  = minmax_element(begin(nums), end(nums));
+int minimumValue  = *itr.first;  //remember, first is minimum  //1
+int maximumValue  = *itr.second; //remember, second is maximum //5
+
+
+Benefit : You didn't have to write for loop to find the max or min element
+```
