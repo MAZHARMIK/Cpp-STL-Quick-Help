@@ -123,3 +123,25 @@ int maximumValue  = *itr.second; //remember, second is maximum //5
 
 Benefit : You didn't have to write for loop to find the max or min element
 ```
+
+### :memo: \*upper_bound(), \*lower_bound in sorted vector, ordered set, ordered map :outbox_tray:
+```c++
+
+For vector:
+vec.upper_bound(begin(vec), end(vec), 35); //returns iterator to first element "greater" than 35
+
+vec.lower_bound(begin(vec), end(vec), 35); //returns iterator to first element "greater or equal" to 35
+
+For set:
+st.upper_bound(35); //returns iterator to first element "greater" than 35
+st.lower_bound(35); //returns iterator to first element "greater" than 35
+
+For map:
+mp.upper_bound(35); //returns iterator to first element "greater" than 35
+mp.lower_bound(35); //returns iterator to first element "greater" than 35
+
+Benefit : You didn't have to write binary search (in case of vector),
+JAVA's tree_map equivalent in C++ (in case of map or set)
+There are amazing applications or problems that can be solved using the above concepts.
+Example : My Calendar I (Leetcode - 729) - You can find it in my interview_ds_algo repository as well :bowtie:
+```
