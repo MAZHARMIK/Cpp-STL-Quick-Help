@@ -143,5 +143,5 @@ mp.lower_bound(35); //returns iterator to first element "greater" than 35
 Benefit : You didn't have to write binary search (in case of vector),
 JAVA's tree_map equivalent in C++ (in case of map or set)
 There are amazing applications or problems that can be solved using the above concepts.
-Example : My Calendar I (Leetcode - 729) - You can find it in my interview_ds_algo repository as well :bowtie:
+Example : My Calendar I (Leetcode - 729) - You can find it in my interview_ds_algo repository as well B-)
 ```
