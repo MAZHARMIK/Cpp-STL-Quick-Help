@@ -161,7 +161,9 @@ rotate(vec.begin(), vec.begin()+n-k, vec.end()); //Right Rotate by K times
 
 ### :memo: std::next_permutation ➡️
 ```c++
-It gives the next lexicographically greater permutation. So, if the elements are already the greatest (descending order), it returns nothing.
+It gives the next lexicographically greater permutation.
+So, if the elements are already the greatest (descending order), it returns nothing.
+
 vector<int> vec{1, 2, 3, 4};
     
 if(next_permutation(begin(vec), end(vec)))
