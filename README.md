@@ -128,9 +128,9 @@ Benefit : You didn't have to write for loop to find the max or min element
 ```c++
 
 For vector:
-vec.upper_bound(begin(vec), end(vec), 35); //returns iterator to first element "greater" than 35
+vec.upper_bound(begin(vec), end(vec), 35);//returns iterator to first element "greater" than 35
 
-vec.lower_bound(begin(vec), end(vec), 35); //returns iterator to first element "greater or equal" to 35
+vec.lower_bound(begin(vec), end(vec), 35);//returns iterator to first element "greater or equal" to 35
 
 For set:
 st.upper_bound(35); //returns iterator to first element "greater" than 35
@@ -143,5 +143,33 @@ mp.lower_bound(35); //returns iterator to first element "greater" than 35
 Benefit : You didn't have to write binary search (in case of vector),
 JAVA's tree_map equivalent in C++ (in case of map or set)
 There are amazing applications or problems that can be solved using the above concepts.
-Example : My Calendar I (Leetcode - 729) - You can find it in my interview_ds_algo repository as well B-)
+Example : My Calendar I (Leetcode - 729) -
+         You can find it in my interview_ds_algo repository as well B-)
+```
+
+### :memo: std::rotate 🌀
+```c++
+vector<int> vec{1, 2, 3, 4};
+int n = vec.size();
+int k = 2;
+
+rotate(vec.begin(), vec.begin()+k, vec.end());   //Left Rotate by K times
+
+rotate(vec.begin(), vec.begin()+n-k, vec.end()); //Right Rotate by K times
+
+```
+
+### :memo: std::next_permutation ➡️
+```c++
+It gives the next lexicographically greater permutation. So, if the elements are already the greatest (descending order), it returns nothing.
+vector<int> vec{1, 2, 3, 4};
+    
+if(next_permutation(begin(vec), end(vec)))
+    cout << "Next permutation available" << endl;
+
+for(int &x : vec)
+    cout << x << " ";
+    
+//Output : 1, 2, 4, 3
+
 ```
