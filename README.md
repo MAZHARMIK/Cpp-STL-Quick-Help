@@ -160,6 +160,16 @@ rotate(vec.begin(), vec.begin()+n-k, vec.end()); //Right Rotate by K times
 
 ```
 
+### :memo: To check if some rotation of string s can become string t🌀
+```c++
+
+string s = "abcde";
+string t = "cdeab";
+
+cout << (s.length() == t.length() && (s+s).find(t) != string::npos) << endl;
+
+```
+
 ### :memo: std::next_permutation ➡️
 ```c++
 It gives the next lexicographically greater permutation.
