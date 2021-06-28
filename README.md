@@ -175,3 +175,52 @@ for(int &x : vec)
 //Output : 1, 2, 4, 3
 
 ```
+
+
+### :memo: std::stringstream :fast_forward:
+```c++
+Usage:
+1) Converting string to number
+2) Count number of words in a string
+
+Example-1
+    string s = "12345";
+    stringstream ss(s);
+ 
+    // The object has the value 12345 and stream
+    // it to the integer x
+    int x = 0;
+    geek >> x;
+    cout << x;
+    
+Exmaple-2
+    stringstream s(ss);
+    string word; // to store individual words
+  
+    int count = 0;
+    while (s >> word)
+        count++;
+    cout << count;
+```
+
+
+### :memo: std::transform(InputIterator first1, InputIterator last1, OutputIterator result, UnaryOperation op) :robot:
+```c++
+Applies an operation sequentially to the elements of one (1) or
+two (2) ranges and stores the result in the range that begins at result.
+Uage :
+1) Convert all letters of a string to lower case
+2) Convert all letters of a string to upper case
+
+Example : 
+    string line = "Hello world, this is MIK";
+
+    transform(begin(line), end(line), begin(line), ::tolower);
+
+    cout << line << endl;
+
+    transform(begin(line), end(line), begin(line), ::toupper);
+
+    cout << line << endl;
+
+```
