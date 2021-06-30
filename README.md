@@ -1,6 +1,6 @@
 # C++ STL Quick Help
 It contains C++ STLs usage and quick help with easy to understand comments and examples (copy+paste to use).
-I learned these while solving different kinds of Leetcode Questions
+I learned these while solving different kinds of Leetcode Questions.  
 I will be using "int, string etc" for ease and not complex entities like pairs, structs etc 😉. You can replace it with any data structure
 
 ### :memo:Different ways of using priority_queue (i.e. heap) :mount_fuji:
