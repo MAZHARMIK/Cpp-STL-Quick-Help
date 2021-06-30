@@ -99,7 +99,7 @@ Examples :
     */
 ```
 
-### :memo: std::accumulate(begin_iterator, end_iterator, initial_sum, ) :heavy_plus_sign:
+### :memo: std::accumulate(begin_iterator, end_iterator, initial_sum) :heavy_plus_sign:
 ```c++
 int sum = 0;
 vector<int> nums{1, 3, 2, 5};
