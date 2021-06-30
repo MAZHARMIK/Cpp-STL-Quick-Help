@@ -151,17 +151,19 @@ Benefit : You didn't have to write for loop to find the max or min element
 ```c++
 
 For vector:
-vec.upper_bound(begin(vec), end(vec), 35);//returns iterator to first element "greater" than 35
-
-vec.lower_bound(begin(vec), end(vec), 35);//returns iterator to first element "greater or equal" to 35
+vector<int> vec{10,20,30,30,20,10,10,20};
+vector<int>::iterator up  = upper_bound(begin(vec), end(vec), 35);//returns iterator to first element "greater" than 35
+vector<int>::iterator low = lower_bound(begin(vec), end(vec), 35);//returns iterator to first element "greater or equal" to 35
+cout << "upper_bound at position " << (up - vec.begin()) << '\n';
+cout << "lower_bound at position " << (low- vec.begin()) << '\n';
 
 For set:
 st.upper_bound(35); //returns iterator to first element "greater" than 35
-st.lower_bound(35); //returns iterator to first element "greater" than 35
+st.lower_bound(35); //returns iterator to first element "greater or equal" than 35
 
 For map:
 mp.upper_bound(35); //returns iterator to first element "greater" than 35
-mp.lower_bound(35); //returns iterator to first element "greater" than 35
+mp.lower_bound(35); //returns iterator to first element "greater or equal" than 35
 
 Benefit : You didn't have to write binary search (in case of vector),
 JAVA's tree_map equivalent in C++ (in case of map or set)
@@ -223,7 +225,7 @@ Example-1
     // The object has the value 12345 and stream
     // it to the integer x
     int x = 0;
-    geek >> x;
+    ss >> x;
     cout << x;
     
 Exmaple-2
@@ -234,6 +236,7 @@ Exmaple-2
     while (s >> word)
         count++;
     cout << count;
+    NOTE: It will tokenize words on the basis of ' ' (space) characters
 ```
 
 
