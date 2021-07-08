@@ -237,6 +237,10 @@ Exmaple-2
         count++;
     cout << count;
     NOTE: It will tokenize words on the basis of ' ' (space) characters
+    Other application on this STL :
+    Leetcode - 151 : Reverse Words in a String
+    Leetcode - 186 : Reverse Words in a String II
+    etc.
 ```
 
 
