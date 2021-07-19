@@ -211,6 +211,9 @@ for(int &x : vec)
     
 //Output : 1, 2, 4, 3
 
+Also see : std::prev_permutation - It gives just the previous lexicographically smaller permutation.
+But I have never encountered any question where it's required till now. So you can skip it.
+
 ```
 
 
