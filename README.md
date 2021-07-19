@@ -2,6 +2,8 @@
 It contains C++ STLs usage and quick help with easy to understand comments and examples (copy+paste to use).
 I learned these while solving different kinds of Leetcode Questions.  
 I will be using "int, string etc" for ease and not complex entities like pairs, structs etc 😉. You can replace it with any data structure
+If you are confused with the syntax or description, see the example. I am sure that will clear things BECAUSE I have specifically chosen  
+:mag_right: "EASY + IMPORTANT + MOST USED" examples. 
 
 ### :memo:Different ways of using priority_queue (i.e. heap) :mount_fuji:
 
