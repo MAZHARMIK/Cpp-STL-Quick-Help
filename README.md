@@ -243,9 +243,10 @@ Exmaple-2
     cout << count;
     NOTE: It will tokenize words on the basis of ' ' (space) characters
     Other application on this STL :
-    Leetcode - 151 : Reverse Words in a String
-    Leetcode - 186 : Reverse Words in a String II
-    Leetcode - 557 : Reverse Words in a String III
+    Leetcode - 151  : Reverse Words in a String
+    Leetcode - 186  : Reverse Words in a String II
+    Leetcode - 557  : Reverse Words in a String III
+    Leetcode - 1108 : Defanging an IP Address
     etc.
 ```
 
@@ -269,4 +270,26 @@ Example :
 
     cout << line << endl;
 
+```
+
+### :memo: std::regex_replace :pager:
+```c++
+It converts a regular expression given by user to desired expression given by user.
+
+Example : 
+    Ex-1 - Remove all vowels from a string.
+    string s = "mika";
+    auto rgx = regex("[aeiouAEIOU]");
+    cout << regex_replace(s, rgx, "");
+    
+    Ex-2 - Replace all '.' to "[.]"
+    string s = "1.2.3.4";
+    auto rgx = regex("\\.");
+    regex_replace(s, rgx, "[.]");
+    
+    Note : You can write smart regex for achieving amazing replacements.
+    Qns on Leetcode:
+    Leetcode - 1108 : Defanging an IP Address
+    Leetcode - 1119 : Remove Vowels from a String
+    etc.
 ```
