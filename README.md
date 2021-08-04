@@ -3,7 +3,8 @@ It contains C++ STLs usage and quick help with easy to understand comments and e
 I learned these while solving different kinds of Leetcode Questions.  
 I will be using "int, string etc" for ease and not complex entities like pairs, structs etc 😉. You can replace it with any data structure
 If you are confused with the syntax or description, see the example. I am sure that will clear things BECAUSE I have specifically chosen  
-:mag_right: "EASY + IMPORTANT + MOST USED" examples. 
+:mag_right: "EASY + IMPORTANT + MOST USED" examples.
+Last but not least, I have added Leetcode Qns also which can be easily solved using STLs
 
 ### :memo:Different ways of using priority_queue (i.e. heap) :mount_fuji:
 
@@ -247,6 +248,7 @@ Exmaple-2
     Leetcode - 186  : Reverse Words in a String II
     Leetcode - 557  : Reverse Words in a String III
     Leetcode - 1108 : Defanging an IP Address
+    Leetcode - 1816 : Truncate Sentence
     etc.
 ```
 
@@ -291,5 +293,24 @@ Example :
     Qns on Leetcode:
     Leetcode - 1108 : Defanging an IP Address
     Leetcode - 1119 : Remove Vowels from a String
+    etc.
+```
+
+### :memo: std::count_if :1234:
+```c++
+counts the number of elements satisfying a given condition (given by comparator function or lambda)
+
+Example : 
+    vector<int> vec{1, 3, 2, 0, 5, 0};
+
+    auto lambda = [&](const auto& i) {
+        return i == 0;
+    };
+
+    cout << count_if(begin(vec), end(vec), lambda); //output : 2
+    
+    Note : You can write any kind of lambda/comparator functions for matching your required condition
+    Qns on Leetcode:
+    Leetcode - 1773 : Count Items Matching a Rule
     etc.
 ```
