@@ -135,7 +135,7 @@ Beautiful example and usage :
 https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/discuss/1305961/C%2B-(A-very-simple-Two-Sum-like-approach)
 ```
 
-### :memo: \*min_element(begin_iterator, end_iterator), \*max_element(begin_iterator, end_iterator), minmax_element(begin_iterator, end_iterator) :astonished:
+### :memo: min_element(begin_iterator, end_iterator), max_element(begin_iterator, end_iterator), minmax_element(begin_iterator, end_iterator) :astonished:
 ```c++
 vector<int> nums{1, 3, 2, 5};
 
@@ -150,7 +150,7 @@ int maximumValue  = *itr.second; //remember, second is maximum //5
 Benefit : You didn't have to write for loop to find the max or min element
 ```
 
-### :memo: \*upper_bound(), \*lower_bound in sorted vector, ordered set, ordered map :outbox_tray:
+### :memo: upper_bound(), lower_bound() in sorted vector, ordered set, ordered map :outbox_tray:
 ```c++
 
 For vector:
@@ -214,7 +214,8 @@ for(int &x : vec)
 
 Also see : std::prev_permutation() - It gives just the previous lexicographically smaller permutation.
 But I have never encountered any question where it's required till now. So you can skip it.
-
+    Leetcode - 31  : Next Permutation
+    etc.
 ```
 
 
