@@ -244,6 +244,15 @@ Exmaple-2
         count++;
     cout << count;
     NOTE: It will tokenize words on the basis of ' ' (space) characters
+Example-3
+    It can be used very well to extract numbers from string.
+    string complex = "1+1i";
+    stringstream ss(complex);
+    char justToSkip;
+    int real, imag;
+    ss >> real >> justToSkip >> imag >> justToSkip;
+    cout << real << ", " << imag; //output : 1, 1
+    
     Other application on this STL :
     Leetcode - 151  : Reverse Words in a String
     Leetcode - 186  : Reverse Words in a String II
@@ -251,6 +260,7 @@ Exmaple-2
     Leetcode - 1108 : Defanging an IP Address
     Leetcode - 1816 : Truncate Sentence
     Leetcode - 884  : Uncommon Words from Two Sentences
+    Leetcode - 537  : Complex Number Multiplication (Example-3 above)
     etc.
 ```
 
