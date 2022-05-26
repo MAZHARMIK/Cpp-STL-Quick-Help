@@ -329,7 +329,7 @@ Example :
 
 ### :memo: std::copy_if :1234:
 ```c++
-Copies the elements in the range [first,last)
+Copies the elements to a container
 how copy_if function works : in this function you have to pass four parameters 
 copy_if(begin iterator , end iterator , destination , condition)
 			
