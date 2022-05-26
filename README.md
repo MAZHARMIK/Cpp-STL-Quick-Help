@@ -326,3 +326,25 @@ Example :
     Leetcode - 1773 : Count Items Matching a Rule
     etc.
 ```
+
+### :memo: std::copy_if :1234:
+```c++
+Copies the elements in the range [first,last)
+how copy_if function works : in this function you have to pass four parameters 
+copy_if(begin iterator , end iterator , destination , condition)
+			
+    eg :    vector<int> from_vec = {1,2,3,4,5,6,7,8,9,10};
+            vector<int> to_vec;
+            //here i want to copy all the number from from_vec vector to to_vec vector which are divisible by 2 .
+            
+            copy_if(from_vec.begin(), from_vec.end(), back_inserter(to_vec),[](int n){return n%2==0;});
+            
+            for(auto it : to_vec) 
+                cout<<it<<" ";
+            o/p : 2 4 6 8 10
+Example : 
+    Note : You can write any kind of lambda/comparator functions for matching your required condition
+    Qns on Leetcode:
+    Leetcode - 1796 : Second Largest Digit in a String
+    etc.
+```
