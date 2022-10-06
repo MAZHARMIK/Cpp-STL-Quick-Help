@@ -348,3 +348,17 @@ Example :
     Leetcode - 1796 : Second Largest Digit in a String
     etc.
 ```
+
+
+### :memo: Writing lambda for upper_bound or lower_bound for vector<pair<int, string>> :1234:
+```c++
+Example : 
+        //Let's say you want upper_bound for a variable timestamp, take it in a pair (because it's a vector of pair)
+        pair<int, string> ref = make_pair(timestamp, "");
+            
+        auto lambda = [](const pair<int, string>& p1, const pair<int, string>& p2) {
+            return p1.first < p2.first;
+        };
+        
+        auto it = upper_bound(begin(my_vector), end(my_vector), ref, lambda);
+```
