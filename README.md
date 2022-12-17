@@ -366,3 +366,23 @@ Example :
     	Leetcode - 981 : Time Based Key-Value Store
     
 ```
+
+
+### :memo: Writing lambda for unordered_map to make life simple :1234:
+```c++
+Example : 
+        //Let's say, you want to store different evaluate logic for different operator "+", "-", "*", "/"
+	unordered_map<string, function<int (int, int) > > mp = {
+            { "+" , [] (int a, int b) { return a + b; } },
+            { "-" , [] (int a, int b) { return a - b; } },
+            { "*" , [] (int a, int b) { return a * b; } },
+            { "/" , [] (int a, int b) { return a / b; } }
+        };
+	
+	//Simply use it like below :-
+	int result = mp["+"](1, 2); //This will return 1+2 i.e. 3
+	
+	Qns on Leetcode: 150
+	Leetcode - : Evaluate Reverse Polish Notation
+    
+```
