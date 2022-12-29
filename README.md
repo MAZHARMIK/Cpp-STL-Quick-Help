@@ -20,6 +20,8 @@ priority_queue<int, vector<int>> pq;               //creates max-heap
 1. Using in-built comparator provided by C++ : 
 
 priority_queue<int, vector<int>, greater<int>> pq;  //creates min-heap
+priority_queue< pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>> > pq; //min_heap of pairs
+priority_queue< pair<int, int>, vector<pair<int, int>>, greater<> > pq;               //min_heap of pairs
 ```
 ```c++
 2. Using user defined comparator as a structure
