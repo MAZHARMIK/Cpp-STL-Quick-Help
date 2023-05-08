@@ -115,26 +115,39 @@ cout << sum; //11
 Benefit : You didn't have to write for loop to find the sum
 ```
 
-### :memo: std::accumulate(begin_iterator, end_iterator, initial_sum, binary_op) :heavy_plus_sign:
+### :memo: std::accumulate(begin_iterator, end_iterator, initial_sum, lambda) :heavy_plus_sign:
 ```c++
-binary_op : Binary operation taking an element of type <initial_sum> as first argument and an
+lambda : Binary operation taking an element of type <initial_sum> as first argument and an
             element in the range as second, and which returns a value that can be assigned to type T.
 
-Example : 
+Example-1 : 
 
-auto myBinaryOp = [&](int s, long n) {
+auto lambda = [&](int s, long n) {
     return s + n*n; //sums the square of numbers
-    //You can call any other function inside as well instead of n*n
+    //You can call any other function inside as well
 };
 
 int sum = 0;
 vector<int> nums{1, 3, 2, 5};
-sum = accumulate(begin(nums), end(nums), 0, myBinaryOp);
+sum = accumulate(begin(nums), end(nums), 0, lambda);
 
 cout << sum; //39
 
+Example-2 : Handling 2-D matrix
+//Summming all elements row by row
+auto lambda = [&](int sum, vector<int> vec) {
+    sum = sum + accumulate(begin(vec), end(vec), 0);
+    return sum;
+};
+
+int result =  accumulate(matrix.begin(), matrix.end(), 0, lambda);
+
+
 Beautiful example and usage :
-https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/discuss/1305961/C%2B-(A-very-simple-Two-Sum-like-approach)
+Leetcode-1577 (My Approach - https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/discuss/1305961/C%2B-(A-very-simple-Two-Sum-like-approach)
+
+Leetcode-1572 (My Approach - https://leetcode.com/problems/matrix-diagonal-sum/discuss/3498479/Using-C%2B%2B-STL-%3A-accumulate)
+
 ```
 
 ### :memo: min_element(begin_iterator, end_iterator), max_element(begin_iterator, end_iterator), minmax_element(begin_iterator, end_iterator) :astonished:
