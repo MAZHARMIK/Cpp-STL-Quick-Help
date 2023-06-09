@@ -367,7 +367,7 @@ Example :
 
 ### :memo: Writing lambda for upper_bound or lower_bound for vector<pair<int, string>> :1234:
 ```c++
-Example : 
+Example-1 : 
         //Let's say you want upper_bound for a variable timestamp, take it in a pair (because it's a vector of pair)
         pair<int, string> ref = make_pair(timestamp, "");
             
@@ -377,8 +377,16 @@ Example :
         
         auto it = upper_bound(begin(my_vector), end(my_vector), ref, lambda);
 	
+Example-2 : 
+        //Let's say you want to find upper_bound of a value in a non-increasing vector.
+	vector<int> vec{1, 0, -1, -2}
+	int idx = upper_bound(begin(vec), end(vec), 0, greater<int>()) - begin(vec);
+	Output will be index of -1 (i.e. 2)
+	
 	Qns on Leetcode:
     	Leetcode - 981 : Time Based Key-Value Store
+	Leetcode - 744 : Find Smallest Letter Greater Than Target
+	Leetcode - 1351 : Count Negative Numbers in a Sorted Matrix
     
 ```
 
