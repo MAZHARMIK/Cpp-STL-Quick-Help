@@ -258,7 +258,7 @@ Exmaple-2
     while (s >> word)
         count++;
     cout << count;
-    NOTE: It will tokenize words on the basis of ' ' (space) characters
+    NOTE: It will tokenize words on the basis of ' ' (space by default) characters
 Example-3
     It can be used very well to extract numbers from string.
     string complex = "1+1i";
