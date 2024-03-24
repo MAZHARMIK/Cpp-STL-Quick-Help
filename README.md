@@ -11,7 +11,7 @@ Last but not least, I have added Leetcode Qns also which can be easily solved us
 - Default declarations
 ```c++
 priority_queue<int> pq;                            //creates max-heap
-priority_queue<int, vector<int>> pq;               //creates min-heap
+priority_queue<int, vector<int>> pq;               //creates max-heap
 ```
 <br>
 
