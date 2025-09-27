@@ -424,7 +424,36 @@ Example :
 	//Find difference in between set1 and set2 and put unique element of set1 in v1
 	set_difference(begin(st1), end(st1), begin(st2), end(st2), back_inserter(v1));
 	
-	Qns on Leetcode: 2215
-	Leetcode - : Find the Difference of Two Arrays
+	Qns on Leetcode: 
+	Leetcode 2215 : Find the Difference of Two Arrays
     
 ```
+
+
+### :memo: std::hypot :triangular_ruler:
+```c++
+hypot -> Computes sqrt(x*x + y*y) (or sqrt(x*x + y*y + z*z) in C++17) safely, avoiding overflow/underflow.
+
+Example-1 : Compute hypotenuse of right triangle
+        double x = 3.0, y = 4.0;
+        double result = std::hypot(x, y);
+        cout << result; //5.0
+
+Example-2 : Distance between two points (x1, y1) and (x2, y2)
+        double x1 = 1, y1 = 2;
+        double x2 = 4, y2 = 6;
+        double dist = std::hypot(x2 - x1, y2 - y1);
+        cout << dist; //5.0
+
+Example-3 (C++17) : 3D Distance
+        double x = 1, y = 2, z = 2;
+        double dist3D = std::hypot(x, y, z);
+        cout << dist3D; //3.0
+
+Benefit :
+        - Numerically stable (avoids overflow/underflow)
+        - Cleaner than writing sqrt(x*x + y*y)
+        - Works with float, double, long double
+
+Qns on Leetcode:
+        Leetcode 812 : Largest Triangly Area
